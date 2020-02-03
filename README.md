@@ -1,2 +1,2 @@
 # flutter
-projetos de pratica cursos de flutter
+projetos de pratica curso de flutter
