@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "850100256253",
+    "firebase_url": "https://whatsapp-dc50a.firebaseio.com",
+    "project_id": "whatsapp-dc50a",
+    "storage_bucket": "whatsapp-dc50a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850100256253:android:fb3c8f25acb44d8d30ad94",
+        "android_client_info": {
+          "package_name": "com.example.whatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "850100256253-5c4qqmnd0653gjhkdnj6h6n5jcotnc4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0GihGpzRYq_B2Q1Y8NhXbcZ7YbpZ8VPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "850100256253-5c4qqmnd0653gjhkdnj6h6n5jcotnc4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
