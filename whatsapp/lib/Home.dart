@@ -12,9 +12,20 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   TabController _controllerTab;
   List<String> itensMenus = ["Configurações", "Deslogar"];
+
+  Future _verificaUsuarioLogado()async{
+    FirebaseAuth auth = FirebaseAuth.instance;
+    //auth.signOut();
+    FirebaseUser usuarioLogado = await auth.currentUser();
+    if(usuarioLogado == null){
+      Navigator.pushReplacementNamed(context, "/login");
+    }
+  }
+
   @override
   void initState() {
     // TODO: implement initState
+    _verificaUsuarioLogado();
     super.initState();
     _controllerTab = TabController(length: 2, vsync: this);
   }
