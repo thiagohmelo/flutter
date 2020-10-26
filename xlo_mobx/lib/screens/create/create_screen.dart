@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:xlo_mobx/components/custom_drawer/custom_drawer.dart';
 import 'package:xlo_mobx/stores/create_store.dart';
 
+import 'components/category_field.dart';
 import 'components/images_field.dart';
 
 class CreateScreen extends StatelessWidget {
@@ -49,6 +50,7 @@ class CreateScreen extends StatelessWidget {
               ),
               maxLines: null,
             ),
+            CategoryField(createStore),
             TextFormField(
               decoration: InputDecoration(
                 labelText: 'Preço *',
@@ -58,7 +60,7 @@ class CreateScreen extends StatelessWidget {
               ),
               keyboardType: TextInputType.number,
               inputFormatters: [
-                WhitelistingTextInputFormatter.digitsOnly,
+                FilteringTextInputFormatter.digitsOnly,
                 RealInputFormatter(centavos: true),
               ],
             ),
